@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>            
-            <li class="active"><a href=<%= user_expenses_path(current_user.id) %>>Gastos <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href=<%= user_expenses_path(current_user.id) %>>mi gasto <span class="sr-only">(current)</span></a></li>
             <li><%= link_to("Salir", destroy_user_session_path, method: "delete") %></li>
           <% else %>
             <li><%= link_to("Create an account", new_user_registration_path) %></li>
